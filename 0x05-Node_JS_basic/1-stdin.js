@@ -6,7 +6,6 @@ process.stdin.on('readable', () => {
   if (input !== null) process.stdout.write(`Your name is: ${input}`);
 
 });
-
 process.stdin.on('end', () => {
   process.stdout.write('This important software is now closing\n');
 });
