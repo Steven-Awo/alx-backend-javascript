@@ -10,7 +10,7 @@ module.exports = function readDatabase(path) {
       // gives just the headder of the dat
       const headder = data.split('\n').slice(0, 1)[0].split(',');
       // finding the firstname and then the field index
-      const idxFn = headder.findIndex((ele) => ele === 'firstname');
+      const idxFname = headder.findIndex((ele) => ele === 'firstname');
       const idxFdex = headder.findIndex((ele) => ele === 'field');
       // declaration of two dictionaries that for count in each fieldds and stored listt of the studdents
       const fieldds = {};
@@ -24,8 +24,8 @@ module.exports = function readDatabase(path) {
         fieldds[listt[idxFdex]] += 1;
         if (!studdents[listt[idxFdex]]) studdents[listt[idxFdex]] = '';
         studdents[listt[idxFdex]] += studdents[listt[idxFdex]]
-          ? `, ${listt[idxFn]}`
-          : listt[idxFn];
+          ? `, ${listt[idxFname]}`
+          : listt[idxFname];
       });
       for (const key in fieldds) {
         if (Object.hasOwnProperty.call(fieldds, key)) {
