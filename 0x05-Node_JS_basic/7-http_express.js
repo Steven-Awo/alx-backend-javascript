@@ -13,7 +13,7 @@ function countStudents(path) {
       // finding the firstname and then the field index
       const idxFirstname = headder.findIndex((ele) => ele === 'firstname');
       const idxFdist = headder.findIndex((ele) => ele === 'field');
-      // declarate two dictionaries
+      // declarate two dictionaries 
       const fieldds = {};
       const studdents = {};
       // it should contain the all data
