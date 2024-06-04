@@ -3,15 +3,14 @@ const fs = require('fs');
 module.exports = function countStudents(path) {
   try {
     const dataa = fs.readFileSync(path, { encoding: 'utf-8' });
-    // spliting the data and taking just only the
-    // list without headder
+    //
     const linees = dataa.split('\n').slice(1, -1);
-    // gives just the headder of the data
+    //
     const headderr = dataa.split('\n').slice(0, 1)[0].split(',');
-    // finding the firstname and then the field index
+    //
     const idxFn = headderr.findIndex((ele) => ele === 'firstname');
     const idxFd = headderr.findIndex((ele) => ele === 'field');
-    // declarate two dictionaries 
+    //
     const fielddss = {};
     const studdents = {};
 
