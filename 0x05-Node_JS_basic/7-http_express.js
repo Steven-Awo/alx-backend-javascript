@@ -42,7 +42,6 @@ function countStudents(path) {
 }
 
 const app = express();
-
 const port = 1245;
 
 app.get('/', (req, res) => {
