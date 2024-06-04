@@ -32,8 +32,8 @@ function countStudents(path) {
       all.listStudents = [];
       for (const keyy in fieldds) {
         if (Object.hasOwnProperty.call(fieldds, keyy)) {
-          const elementt = fieldds[keyy];
-          all.listStudents.push(`Number of students in ${keyy}: ${elementt}. List: ${studdents[keyy]}`);
+          const element = fieldds[keyy];
+          all.listStudents.push(`Number of students in ${keyy}: ${element}. List: ${studdents[keyy]}`);
         }
       }
       return resolve(all);
