@@ -5,7 +5,7 @@ module.exports = function countStudents(path) {
     fs.readFile(path, { encoding: 'utf-8' }, (err, data) => {
       if (err) return reject(Error('Cannot load the database'));
       // spliting the data and taking just only the
-      list without headder
+      // list without headder
       const linnes = data.split('\n').slice(1, -1);
       // gives just the headder of the data
       const headder = data.split('\n').slice(0, 1)[0].split(',');
