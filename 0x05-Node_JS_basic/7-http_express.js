@@ -32,8 +32,8 @@ function countStudents(path) {
       all.listStudents = [];
       for (const keyy in fieldds) {
         if (Object.hasOwnProperty.call(fieldds, keyy)) {
-          const element = fieldds[keyy];
-          all.listStudents.push(`Number of students in ${keyy}: ${element}. List: ${studdents[keyy]}`);
+          const elementt = fieldds[keyy];
+          all.listStudents.push(`Number of students in ${keyy}: ${elementt}. List: ${studdents[keyy]}`);
         }
       }
       return resolve(all);
@@ -47,11 +47,13 @@ const port = 1245;
 app.get('/', (req, res) => {
   res.send('Hello Holberton School!');
 });
-app.get('/studdents', (req, res) => {
-  res.write('This is the list of our studdents\n');
+app.get('/students', (req, res) => {
+  res.write('This is the list of our students\n');
+
   countStudents(process.argv[2])
     .then((data) => {
       res.write(data.numberStudents);
+
       res.end(data.listStudents.join('\n'));
     })
     .catch((err) => {
