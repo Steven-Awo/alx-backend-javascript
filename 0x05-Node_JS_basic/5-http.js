@@ -53,8 +53,8 @@ const app = http.createServer((req, res) => {
 
   if (req.url === '/') res.end('Hello Holberton School!');
 
-  if (req.url === '/studdents') {
-    res.write('This is the list of our studdents\n');
+  if (req.url === '/students') {
+    res.write('This is the list of our students\n');
 
     countStudents(process.argv[2])
       .then((data) => {
