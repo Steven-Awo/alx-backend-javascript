@@ -1,25 +1,27 @@
 {
-    "name": "0x13-unittests_in_js",
-    "version": "1.0.0",
-    "description": "",
-    "main": "0-calcul.js",
-    "scripts": {
-        "lint": "./node_modules/.bin/eslint",
-        "check-lint": "lint [0-9]*.js",
-        "test": "./node_modules/mocha/bin/mocha --require babel-register --exit"
-    },
-    "keywords": [],
-    "author": "Andres Hugueth",
-    "license": "ISC",
-    "dependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-preset-env": "^1.7.0",
-        "chai": "^4.2.0",
-        "eslint": "^6.4.0",
-        "eslint-config-airbnb-base": "^14.0.0",
-        "eslint-plugin-import": "^2.18.2",
-        "eslint-plugin-jest": "^22.17.0",
-        "mocha": "^8.2.1",
-        "sinon": "^9.2.3"
-    }
+  "name": "0x13-unittests_in_js",
+  "version": "1.0.0",
+  "description": "Curriculum Short Specializations Average: 136.34% 0x06. Unittests in JS UnitTests Back-end JavaScript ES6 NodeJS ExpressJS Mocha  Weight: 1  Project will start Jun 5, 2024 6:00 AM, must end by Jun 7, 2024 6:00 AM  Checker will be released at Jun 5, 2024 6:00 PM  An auto review will be launched at the deadline",
+  "main": "0-calcul.js",
+  "scripts": {
+    "lint": "eslint",
+    "check-lint": "lint [0-9]*.js",
+    "test": "./node_modules/mocha/bin/mocha --require babel-register --exit"
+  },
+  "keywords": [],
+  "author": "Andres Hugueth",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "sinon": "^9.2.3"
+  },
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  }
 }
