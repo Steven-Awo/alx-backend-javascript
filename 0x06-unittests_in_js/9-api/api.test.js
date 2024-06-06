@@ -24,7 +24,7 @@ describe('Integration Testing', () => {
   });
 
   describe('GET /cart/12', () => {
-    it('Responds with 200 and id 12 in msg', (done) => {
+    it('Responds is with the 200 and id 12 in msg', (done) => {
       const optiions = {
         url: 'http://localhost:7865/cart/12',
         method: 'GET',
@@ -43,7 +43,7 @@ describe('Integration Testing', () => {
   });
 
   describe('GET /cart/1', () => {
-    it('Responds with 200 and id 1 in msg', (done) => {
+    it('Responds is with the 200 and id 1 in msg', (done) => {
       const optiions = {
         url: 'http://localhost:7865/cart/1',
         method: 'GET',
@@ -62,7 +62,7 @@ describe('Integration Testing', () => {
   });
 
   describe('GET /cart/123', () => {
-    it('Responds with 200 and id 12 in msg', (done) => {
+    it('Responds is with the 200 and id 12 in msg', (done) => {
       const optiions = {
         url: 'http://localhost:7865/cart/123',
         method: 'GET',
@@ -81,7 +81,7 @@ describe('Integration Testing', () => {
   });
 
   describe('GET /cart/a12', () => {
-    it('Responds with 404', (done) => {
+    it('Responds is with the 404', (done) => {
       const optiions = {
         url: 'http://localhost:7865/cart/a12',
         method: 'GET',
@@ -98,7 +98,7 @@ describe('Integration Testing', () => {
   });
 
   describe('GET /cart/a12b', () => {
-    it('Responds with 404', (done) => {
+    it('Responds is with the 404', (done) => {
       const optiions = {
 
         url: 'http://localhost:7865/cart/a12b',
@@ -116,7 +116,7 @@ describe('Integration Testing', () => {
   });
 
   describe('GET /cart/12b', () => {
-    it('Responds with 404', (done) => {
+    it('Responds is with the 404', (done) => {
 
       const optiions = {
 
@@ -134,7 +134,7 @@ describe('Integration Testing', () => {
   });
 
   describe('GET /cart/hello', () => {
-    it('Responds with 404', (done) => {
+    it('Responds is with the 404', (done) => {
       const optiions = {
 
         url: 'http://localhost:7865/cart/hello',
@@ -152,7 +152,7 @@ describe('Integration Testing', () => {
   });
 
   describe('GET /cart/', () => {
-    it('Responds with 404', (done) => {
+    it('Responds is with the 404', (done) => {
       const optiions = {
 
         url: 'http://localhost:7865/cart/',
@@ -168,4 +168,3 @@ describe('Integration Testing', () => {
       });
     });
   });
-});
